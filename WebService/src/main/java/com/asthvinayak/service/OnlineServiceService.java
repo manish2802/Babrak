@@ -36,7 +36,6 @@ public class OnlineServiceService {
 		    }
 		    return orderList;
 	        }
-
 	/**
 	 * 
 	 * @param order
@@ -50,8 +49,6 @@ public class OnlineServiceService {
 		OnlineServiceDAOImpl.save(orderDTO);
 
 	    }
-	
-	
 
 	/**
 	 * 

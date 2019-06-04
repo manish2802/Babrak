@@ -1,15 +1,13 @@
-package com.asthvinayak.util;
 
+package com.asthvinayak.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 public class DBUtil {
 
 	static {
-
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (ClassNotFoundException e) {
@@ -28,7 +26,7 @@ public class DBUtil {
 		if (pStmt != null) {
 			pStmt.close();
 		}
-	}
+	    }
 	public static void closeConnection(Connection conn, PreparedStatement pStmt, ResultSet rs) throws SQLException {
 		if (conn != null) {
 			conn.close();
@@ -40,5 +38,4 @@ public class DBUtil {
 			rs.close();
 		}
 	    }
-
-}
+        }
